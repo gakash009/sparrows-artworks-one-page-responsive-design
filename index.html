@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Sparrow's Artworks is a freelance webiste where you can get the best valued deals on graphic designing, video editing and animation, article writing and website designing services.">
+        <meta name="keywords" content="online website, freelancing website, graphic designing, video editing, website designing, web designer, sparrows artworks, search engine optimization, seo, digital marketing">
+        <meta name="author" content="Gishan Akash">
+        <title>Sparrow's Artworks | Welcome</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+        <!-- header marked fully -->
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <img src="./img/logo.jpg" width="40px">
+                    <a href="index.html"><h1>Sparrow's Artworks</h1></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="slides">
+            
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+               <div class="mySlides fade">
+                 <div class="numbertext">1 / 3</div>
+                 <img src="./img/1.png" style="width:100%">
+                </div>
+  
+                <div class="mySlides fade">
+                 <div class="numbertext">2 / 3</div>
+                 <img src="./img/2.png" style="width:100%">
+                </div>
+  
+          
+
+        </section>
+
+        <section id="boxes">
+            <h1>What we offer</h1>
+            <div class="container2">
+                  <div class="box">
+                    <img src="./img/3.jpg" alt="graphic design icon" width="310px" class="im">
+                    <h3>Graphic design</h3>
+                  </div>
+
+                  <div class="box">
+                    <img src="./img/4.jpg" alt="graphic design icon"  width="290px" class="im">
+                    <h3>Web Design & Development</h3>
+                  </div>
+
+                  <div class="box">
+                    <img src="./img/5.jpg" alt="graphic design icon"  width="290px" class="im">
+                    <h3>Video editing & Motion design</h3>
+                  </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h1>About Us</h1>
+                <p>Sparrow's Digital solutions is a website created to reach out to people who require various kinds of services related to online businesses. We specialize in Web development and design, video editing, motion design, digital marketing and graphic design. Customer satisfaction is our #1 priority and we are bound to work hard for it.</p>
+
+            </div>
+        </section>
+
+
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe to our Newsletter</h1>
+                <form>
+                    <input type="email" placeholder="enter your email address">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <h5>&copy; 2021 sparrow's artworks | e-commerce solution by Gishan</h5>
+            </div>
+        </footer>
+
+
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+               var i;
+               var slides = document.getElementsByClassName("mySlides");
+               for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";}
+               slideIndex++;
+               if (slideIndex > slides.length) {slideIndex = 1}
+               slides[slideIndex-1].style.display = "block";
+               setTimeout(showSlides, 6000); // Change image every 2 seconds
+            }
+        </script>
+
+    </body>
+</html>
